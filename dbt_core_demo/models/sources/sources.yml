@@ -1,0 +1,17 @@
+
+version: 2
+
+
+sources:
+  - name: dbt_bq_example
+    schema: cdcs_dbt_training
+    tables:
+      - name: raw_customers
+      - name: raw_orders
+      - name: raw_payments
+  - name: dbt_bq_example_qa
+    schema: cdcs_dbt_training_qa
+    tables:
+      - name: raw_customers
+      - name: raw_orders
+      - name: raw_payments
